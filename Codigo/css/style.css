@@ -934,6 +934,10 @@ form label {
 }
 @media screen and (max-width:708px) 
 { 
+  #eventname
+  {
+    margin-top: 30vh;
+  }
   .simply-countdown > .simply-section {
      width: 73px;
      height: 73px;
