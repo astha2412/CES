@@ -28,10 +28,6 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
 	
 	<style>
 		
@@ -113,9 +109,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 20vw;">
-					<h1 style="color: #fff;margin-right: 5vw;">CODIGO-MMMUT</h1>
-					<div id="mycountdown" style="margin: 0 auto;"></div>
-					<div style="margin-top: 20px;margin-right: 6vw;">
+					<h1 style="color: #fff;">CODIGO-MMMUT</h1>
+					<!-- <div id="mycountdown" style="margin: 0 auto;"></div> -->
+					<div class="simply-countdown simply-countdown-one"></div>
+					<div style="margin-top: 20px;">
 					<button class="btn" style="color:blue;background-color:skyblue;font-weight: 600;">Register</button>
 					<button class="btn" style="color:blue;background-color:skyblue;font-weight: 600;">Proceed to Codigo</button>
 						
@@ -437,7 +434,7 @@
 						<small class="block">Designed by <a href="#" target="_blank">Arpit Jain</a></small>
 					</p>
 					<p>
-						<ul>
+						<ul style="padding: 0">
 						      <li>
 						        <a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 						      </li>
@@ -481,11 +478,30 @@
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
-
+<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
-<script src="countdown/script.js"></script>
+	<script>
+    var d = new Date(new Date().getTime() + 100 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+</script>
+<!-- <script src="countdown/script.js"></script> -->
 	</body>
 </html>
 
