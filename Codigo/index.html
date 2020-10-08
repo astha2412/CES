@@ -81,6 +81,32 @@
 	{
 		height: 100vh;
 	}
+	.mybtn
+	{
+		color:blue;
+		background-color:skyblue;
+		font-weight: 600;
+	}.mybtn2
+	{
+		color:blue;
+		background-color:skyblue;
+		font-weight: 600;
+	}
+	#loginbut
+		{
+			margin-left:30%;
+			position: absolute;
+			z-index: 1000;
+		}
+
+	@media(max-width:600px)
+	{
+		#loginbut
+		{
+			margin-left:17%;
+		}
+	}
+	
 	</style>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
@@ -112,7 +138,7 @@
 	</nav>
 
 	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(img/2.jpg);" >
-		<div id="particles-js" style="z-index:1000; position: absolute;top:0;height: 100vh;width: 100vw;">
+		<div id="particles-js" style="z-index:5; position: absolute;top:0;height: 100vh;width: 100vw;">
 		</div>
 		<div class="overlay"></div>
 		<div class="container">
@@ -121,10 +147,9 @@
 					<h1 style="color: #fff;" id="eventname">CODIGO-MMMUT</h1>
 					<!-- <div id="mycountdown" style="margin: 0 auto;"></div> -->
 					<div class="simply-countdown simply-countdown-one"></div>
-					<div style="margin-top: 20px;">
-					<button class="btn" style="color:blue;background-color:skyblue;font-weight: 600;">Register</button>
-					<button class="btn" style="color:blue;background-color:skyblue;font-weight: 600;">Proceed to Codigo</button>
-						
+					<div  id="loginbut">
+						<a href="index.html" class="btn mybtn" >Register</a>
+						<a href="index.html" class="btn mybtn2">Proceed to Codigo</a>	
 					</div>
 				</div>
 			</div>
