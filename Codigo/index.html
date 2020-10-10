@@ -92,20 +92,22 @@
 		background-color:skyblue;
 		font-weight: 600;
 	}
+	#outerloginbut
+	{
+		position: absolute;
+		z-index: 1000;
+		width: 100%;
+		padding: 0;
+		margin: 0 auto;
+
+	}
 	#loginbut
 		{
-			margin-left:30%;
-			position: absolute;
-			z-index: 1000;
+			margin: 0 auto;
+			
 		}
 
-	@media(max-width:600px)
-	{
-		#loginbut
-		{
-			margin-left:17%;
-		}
-	}
+	
 	
 	</style>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -147,9 +149,11 @@
 					<h1 style="color: #fff;" id="eventname">CODIGO-MMMUT</h1>
 					<!-- <div id="mycountdown" style="margin: 0 auto;"></div> -->
 					<div class="simply-countdown simply-countdown-one"></div>
-					<div  id="loginbut">
-						<a href="index.html" class="btn mybtn" >Register</a>
-						<a href="index.html" class="btn mybtn2">Proceed to Codigo</a>	
+					<div id="outerloginbut" class="col-md-8 col-md-offset-2 text-center">
+						<div  id="loginbut">
+							<a href="index.html" class="btn mybtn" >Register</a>
+							<a href="index.html" class="btn mybtn2">Proceed to Codigo</a>	
+						</div>
 					</div>
 				</div>
 			</div>
