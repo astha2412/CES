@@ -74,7 +74,7 @@
 	}
 	#fh5co-logo img
 	{
-		height: 8vh;
+		height: 9vh;
 		/*width: 5vw;*/
 	}
 	.fh5co-cover
@@ -92,8 +92,51 @@
 		background-color:skyblue;
 		font-weight: 600;
 	}
-	
-	
+	#comingsoon
+	{
+		color: #fff;
+		font-size: 7rem;
+	}
+	#eventname
+	{
+		font-size: 8rem;
+	}
+	#fh5co-logo a img
+	{
+		/*position: relative;z-index: 1000;*/
+	}
+	.fh5co-nav .menu-1
+	{
+		padding-top: 3vh;
+	}
+	@media screen and (max-width: 950px) {
+		.fh5co-nav .menu-1
+		{
+			padding-top:0;
+			margin-top: 0;
+		}
+	}
+	@media screen and (max-width: 750px) {
+		.fh5co-nav .menu-1
+	{
+		padding-top: 1vh;
+	}
+		#comingsoon
+		{
+			font-size: 3rem;
+		}
+	#eventname
+		{
+			font-size: 4rem;
+		}
+	#mmmutlogo
+	{
+		
+		position: absolute;
+		right: 1px;
+	}
+
+	}
 	</style>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
@@ -103,20 +146,21 @@
 		<div class="container">
 			
 			<div class="row">
-				<div class="col-xs-2">
+				<div class="col-xs-12 col-md-2">
 					<div id="fh5co-logo" style="display: flex;">
-						<a href="#"><img src="img/logo3.png" alt=""></a>
-						<a href="#"><img src="img/ces2.png" alt=""></a>
+						<a href="#"><img src="img/ces2.png" alt="" ></a>
+						<a href="#"><img src="img/logo3.png" id="mmmutlogo" alt=""></a>
+
 					</div>
 					
 				</div>
-				<div class="col-xs-10 text-right menu-1">
+				<div class="col-md-10 text-right menu-1">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
 						<li><a href="#fh5co-event">Event Details</a></li>
-						<li><a href="#fh5co-couple-story">Previous year Winners</a></li>
-						<li><a href="#fh5co-gallery">Our Team</a></li>
-						<li><a href="#contactus">Contact Us</a></li>
+						<li><a href="#fh5co-couple">Event Coordinators</a></li>
+						<!-- <li><a href="#fh5co-gallery">Our Team</a></li>
+						<li><a href="#contactus">Contact Us</a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -133,7 +177,8 @@
 				<div class="col-md-8 col-md-offset-2 text-center" style="margin-top: 20vw;">
 					<h1 style="color: #fff;" id="eventname">CODIGO-MMMUT</h1>
 					<!-- <div id="mycountdown" style="margin: 0 auto;"></div> -->
-					<div class="simply-countdown simply-countdown-one"></div>
+					<!-- <div class="simply-countdown simply-countdown-one"></div> -->
+					<h1 id="comingsoon">COMING SOON</h1>
 					<div id="outerloginbut" class="col-md-8 col-md-offset-2 text-center">
 						<div  id="loginbut">
 							<a href="index.html" class="btn mybtn"  style="position: relative;z-index: 1000">Register</a>
@@ -145,37 +190,7 @@
 		</div>
 	</header>
 
-	<div id="fh5co-couple">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2 style="color:black;">Event Coordinators</h2>
-					<h3>November 28th, 2020 , MMMUT</h3>
-				</div>
-			</div>
-			<div class="couple-wrap animate-box">
-				<div class="couple-half">
-					<div class="groom">
-						<img src="img/1.jpg"  class="img-responsive">
-					</div>
-					<div class="desc-groom">
-						<h3>Arpit</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatibus totam exercitationem corporis soluta cumque sit, beatae nulla quia? Sunt iusto sit cum optio voluptas cumque, officiis quaerat alias rerum!</p>
-					</div>
-				</div>
-				
-				<div class="couple-half">
-					<div class="bride">
-						<img src="img/2.jpg" alt="groom" class="img-responsive">
-					</div>
-					<div class="desc-bride">
-						<h3>Swati</h3>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam sunt ducimus debitis, quaerat, dolore itaque voluptate nobis, fugit tenetur, ullam minus. Odit error voluptates ipsa laborum necessitatibus asperiores recusandae expedita?</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 
 	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
 		<div class="overlay"></div>
@@ -227,211 +242,115 @@
 		</div>
 	</div>
 
-	<div id="fh5co-couple-story">
+<div id="fh5co-couple">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>Any quote for winners</span>
-					<h2>Our Previous Year Winners</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore alias accusamus modi dolorum recusandae voluptatibus, veritatis saepe odio dolores placeat animi nulla illum. Nulla quia corrupti facere sit aut quae?</p>
+					<h2 style="color:black;">Event Coordinators</h2>
+					<h3>November 28th, 2020 , MMMUT</h3>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline animate-box">
-						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(img/1.jpg);"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Achintya Sign</h3>
-									<span class="date">CSE,2rd year,MMMUT</span>
-								</div>
-								<div class="timeline-body">
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id incidunt aut earum dolores, excepturi voluptatibus necessitatibus odit quia nihil, ipsam rerum, fugit tempore et exercitationem in iste tempora temporibus.</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge" style="background-image:url(img/2.jpg);"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Aditya Narayan Pandey</h3>
-									<span class="date">ECE,2rd year,MMMUT</span>
-								</div>
-								<div class="timeline-body">
-									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere officia, obcaecati cumque ipsam numquam nostrum sint labore vitae ex dolorum quia expedita. Placeat, eaque beatae tempora. Deserunt, et, ipsa!</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(img/1.jpg);"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Nilesh Kumar</h3>
-									<span class="date">CSE 2nd year,MMMUT</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li>
-			    	</ul>
+			<div class="couple-wrap animate-box">
+				<div class="couple-half">
+					<div class="groom">
+						<img src="img/1.jpg"  class="img-responsive">
+					</div>
+					<div class="desc-groom">
+						<h3>Arpit</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatibus totam exercitationem corporis soluta cumque sit, beatae nulla quia? Sunt iusto sit cum optio voluptas cumque, officiis quaerat alias rerum!</p>
+					</div>
+				</div>
+				
+				<div class="couple-half">
+					<div class="bride">
+						<img src="img/2.jpg" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-bride">
+						<h3>Swati</h3>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam sunt ducimus debitis, quaerat, dolore itaque voluptate nobis, fugit tenetur, ullam minus. Odit error voluptates ipsa laborum necessitatibus asperiores recusandae expedita?</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="fh5co-gallery" class="fh5co-section-gray">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>quotes for team of CES</span>
-					<h2>Meet Our Team</h2>
-					<p>Description for the team Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Accusantium eaque, accusamus asperiores, architecto a minima, dolores expedita, rem vitae repellat aperiam maiores libero possimus laboriosam quod hic culpa laudantium magni?</p>
-				</div>
-			</div>
-			<div class="row row-bottom-padded-md">
-				<div class="col-md-12">
-					<ul id="fh5co-gallery-list">
-						
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(img/1.jpg);"> 
-						<a href="#" style="border-radius: 30%;">
-							<div class="case-studies-summary">
-								<h2>Arpit Jain</h2>
-								<span>CSE 2nd year</span>
-							</div>
-						</a>
-					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(img/2.jpg); ">
-						<a href="#" class="color-2">
-							<div class="case-studies-summary">
-								
-								<h2>Swati Sign</h2>
-								<span>CSE 2nd year</span>
-							</div>
-						</a>
-					</li>
+	<!--==========================
+      F.A.Q Section
+    ============================-->
+    <section id="faq" class="wow fadeInUp">
 
+      <div class="container " style="margin: 0 auto;">
 
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(img/1.jpg); ">
-						<a href="#" class="color-3">
-							<div class="case-studies-summary">
-								
-								<h2>Apoorv</h2>
-								<span>CSE 2nd year</span>
-							</div>
-						</a>
-					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(img/2.jpg); ">
-						<a href="#" class="color-4">
-							<div class="case-studies-summary">
-								<!-- <span>12 Photos</span> -->
-								<h2>Kaustaubh</h2>
-								<span>CSE 2nd year</span>
-							</div>
-						</a>
-					</li>
+        <div class="section-header text-center">
+          <h2>F.A.Q </h2>
+        </div>
 
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(img/1.jpg); ">
-							<a href="#" class="color-3">
-								<div class="case-studies-summary">
-									<!-- <span>50 Photos</span> -->
-									<h2>Rupal</h2>
-									<span>CSE 2nd year</span>
-								</div>
-							</a>
-						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(img/2.jpg); ">
-							<a href="#" class="color-4">
-								<div class="case-studies-summary">
-									<!-- <span>45 Photos</span> -->
-									<h2>Somya</h2>
-									<span>CSE 2nd year</span>
-								</div>
-							</a>
-						</li>
+        <div class="row justify-content-center col-md-10 col-md-offset-2">
+          <div class="col-lg-9">
+              <ul id="faq-list">
 
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(img/1.jpg); ">
-							<a href="#" class="color-4">
-								<div class="case-studies-summary">
-									<!-- <span>35 Photos</span> -->
-									<h2>Siddhartha Pandey</h2>
-									<span>CSE 2nd year</span>
-								</div>
-							</a>
-						</li>
+                <li>
+                  <a data-toggle="collapse" class="collapsed" href="#faq1">I don't know much about coding can i participate? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq1" class="collapse" data-parent="#faq-list">
+                    <p>
+                      YES   sum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq2" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq3" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq4" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq5" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq6" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                    </p>
+                  </div>
+                </li>
+      
+              </ul>
+          </div>
+        </div>
 
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(img/2.jpg); "> 
-							<a href="#" class="color-5">
-								<div class="case-studies-summary">
-									<!-- <span>90 Photos</span> -->
-									<h2>Somya</h2>
-									<span>CSE 2nd year</span>
-								</div>
-							</a>
-						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(1.jpg); ">
-							<a href="#" class="color-6">
-								<div class="case-studies-summary">
-									<!-- <span></span> -->
-									<h2>Ujjawal</h2>
-									<span>CSE 2nd year</span>
-								</div>
-							</a>
-						</li>
-					</ul>		
-				</div>
-			</div>
-		</div>
-	</div>
+      </div>
 
-	<div class="fh5co-section" style="padding: 10px;" id="contactus">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-push-2 animate-box">
-					<h3>For Any Query Please fill this form correctly</h3>
-					<form action="#">
-						<div class="row form-group">
-							<div class="col-md-6">
-								<label for="fname">First Name</label>
-								<input type="text" id="fname" class="form-control" placeholder="Your firstname">
-							</div>
-							<div class="col-md-6">
-								<label for="lname">Last Name</label>
-								<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-							</div>
-						</div>
-
-						<div class="row form-group">
-							<div class="col-md-12">
-								<label for="email">Email</label>
-								<input type="text" id="email" class="form-control" placeholder="Your email address">
-							</div>
-						</div>
-
-						<div class="row form-group">
-							<div class="col-md-12">
-								<label for="subject">Branch and year</label>
-								<input type="text" id="subject" class="form-control" placeholder="Your branch and year">
-							</div>
-						</div>
-
-						<div class="row form-group">
-							<div class="col-md-12">
-								<label for="message">Query</label>
-								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Write us something"></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<input type="submit" value="Send Message" class="btn" style="background-color: #f82249;color:#fff;">
-						</div>
-
-					</form>		
-				</div>
-			</div>
-			
-		</div>
-	</div>
+    </section>
+	
 
   <!--==========================
     Footer
