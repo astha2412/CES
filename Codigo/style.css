@@ -300,14 +300,14 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-counter,
 #fh5co-event {
-  height: 850px;
+  height: 100vh;
   float: left;
 }
 #fh5co-counter .display-t,
 #fh5co-counter .display-tc,
 #fh5co-event .display-t,
 #fh5co-event .display-tc {
-  height: 700px;
+  height: 70vh;
   display: table;
   width: 100%;
 }
@@ -1971,6 +1971,7 @@ form label {
 
 #faq {
   padding: 60px 0;
+  /* height: 100vh; */
 }
 
 #faq #faq-list {
